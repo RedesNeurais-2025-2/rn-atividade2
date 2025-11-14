@@ -1,0 +1,52 @@
+{
+  "nome_modelo": "MLP_Celtics_FeatureSelection",
+  "data_treinamento": "2025-11-14 02:51:47",
+  "arquitetura": {
+    "n_layers": 2,
+    "neurons_por_camada": [
+      34,
+      19
+    ],
+    "activation": "elu",
+    "optimizer": "rmsprop",
+    "learning_rate": 0.008330512560726103,
+    "dropout_rate": 0.3750592947215523,
+    "batch_size": 16
+  },
+  "features_selecionadas": [
+    "Tocos",
+    "Cestas de 3 Convertidas",
+    "Percentual de Arremesso",
+    "Lances Livres Tentados",
+    "Local_Encoded",
+    "Adversario_Encoded",
+    "Pontos",
+    "Percentual de Lances Livres",
+    "+/-",
+    "Assistências"
+  ],
+  "metricas_finais": {
+    "acuracia": 0.9666666666666667,
+    "precisao": 1.0,
+    "recall": 0.9545454545454546,
+    "f1_score": 0.9767441860465116,
+    "auc_roc": 1.0,
+    "mae": 0.030948853120207787,
+    "rmse": 0.1677950804032129,
+    "r2_score": 0.8560246229171753
+  },
+  "distribuicao_dados": {
+    "total_jogos": 98,
+    "vitorias": 71,
+    "derrotas": 27,
+    "proporcao_treino_val_test": "54/14/30"
+  },
+  "arquivos_gerados": [
+    "modelo_mlp_celtics_fs.h5",
+    "scaler_mlp.pkl",
+    "feature_selection_info.pkl",
+    "historico_treinamento_mlp.csv",
+    "previsoes_detalhadas_mlp.csv",
+    "celtics_2024_25_processado.csv"
+  ]
+}
